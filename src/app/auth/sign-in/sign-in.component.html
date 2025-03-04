@@ -1,0 +1,26 @@
+<div class="auth-background">
+  <div class="auth-card">
+    <h2>
+      WELCOME TO THE <br>
+      GROCERY STORE <br>
+      <span class="blue-text">MANAGEMENT SYSTEM</span>
+    </h2>
+    <p>Streamline inventory, track orders, manage suppliers, and enhance store operations — all in one place.</p>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input id="username" type="text" [(ngModel)]="username" placeholder="acoolusername" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input id="password" type="password" [(ngModel)]="password" placeholder="Password" />
+    </div>
+
+    <button class="sign-btn" (click)="onSignIn()">Sign In</button>
+    <div class="signup-link">
+      <span>Don't have an account?</span>
+      <a routerLink="/sign-up">Sign Up</a>
+    </div>
+  </div>
+</div>

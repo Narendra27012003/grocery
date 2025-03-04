@@ -1,0 +1,42 @@
+.sidenav-container {
+  background-color: #e7e9f4;
+  min-width: 314px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 56px); /* subtract header height if you want it flush */
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.sidenav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #d1d3e0;
+}
+
+.nav-link.active {
+  background-color: #c5cae9;
+}
+
+.sidenav-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 1rem;
+}

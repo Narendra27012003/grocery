@@ -1,0 +1,281 @@
+/* Global Container */
+.stock-management-container {
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* -------------------------- */
+/* Top Controls: Filter/Sort & Create Task */
+/* -------------------------- */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.filter-sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.filter-sort-controls label {
+  font-size: 0.9rem;
+  color: #333;
+}
+.filter-sort-controls select,
+.filter-sort-controls input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.create-task-control {
+  /* Right aligned */
+}
+.create-btn {
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.create-btn:hover {
+  background-color: #2c3992;
+}
+
+/* -------------------------- */
+/* Page Title */
+.page-title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* -------------------------- */
+/* Summary & Chart Section: Side by Side */
+/* -------------------------- */
+.summary-chart-section {
+  display: flex;
+  flex-direction: row; /* side by side */
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Summary Section: 2x2 Grid */
+.summary-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for four cards */
+  gap: 20px;
+  flex: 1;
+}
+.summary-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.summary-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #444;
+}
+.summary-card p {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: #666;
+}
+.status {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
+
+/* Graph Section */
+.graph-section {
+  flex: 1.5;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  min-width: 400px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* -------------------------- */
+/* Inventory Section */
+.inventory-section {
+  margin-top: 20px;
+}
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Inventory Tabs */
+.inventory-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.inventory-tabs button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.inventory-tabs button.active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.create-task-tab {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+/* View All Button */
+.view-all-btn {
+  margin-bottom: 10px;
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Table Container */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.table-container.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+.sticky-left {
+  position: sticky;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+.sticky-right {
+  position: sticky;
+  right: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.pagination button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+}
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.form-group input,
+.form-group select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+.modal-actions button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.modal-actions button:first-child {
+  background-color: #ccc;
+  color: #333;
+}
+.modal-actions button:last-child {
+  background-color: #3f51b5;
+  color: #fff;
+}

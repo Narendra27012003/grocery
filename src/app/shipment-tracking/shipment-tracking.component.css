@@ -1,0 +1,118 @@
+.shipment-tracking-container {
+  padding: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Shipment Tabs */
+.shipment-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.shipment-tabs button {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.shipment-tabs button.active {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.create-task-btn {
+  margin-left: auto;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Shipments Table */
+.shipments-table-container {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+th,
+td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Modal Styles (reuse from Stock Management) */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+}
+.modal h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.form-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.form-group input,
+.form-group select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+.modal-actions button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.modal-actions button:first-child {
+  background-color: #ccc;
+  color: #333;
+}
+.modal-actions button:last-child {
+  background-color: #3f51b5;
+  color: #fff;
+}

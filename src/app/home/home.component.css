@@ -8,8 +8,8 @@
 
 .main-content {
   display: flex;
-  flex: 1; /* takes remaining vertical space */
-  overflow: hidden; /* optional */
+  flex: 1;
+  overflow: hidden;
 }
 
 .dashboard-content {

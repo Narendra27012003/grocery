@@ -1,0 +1,82 @@
+{
+  "shipmentsList": [
+    {
+      "id": "LP-1234-628-721035",
+      "shipperName": "Dominic Toretto",
+      "phoneNo.": "9894989490",
+      "status": "completed",
+      "product": "cornflakes",
+      "supplier": "farm fresh",
+      "quantity": 250,
+      "price": 184,
+      "deliveryDate": "2025-02-27T00:00:00",
+      "consignee": "Brain o'Conner",
+      "destination": "Bengaluru",
+      "connection": "Online",
+      "task": "Cash Management"
+    },
+    {
+      "id": "LP-1234-628-721036",
+      "shipperName": "Dominic",
+      "phoneNo.": "9800123456",
+      "status": "in-transit",
+      "product": "cornflakes",
+      "supplier": "farm fresh",
+      "quantity": 250,
+      "price": 295,
+      "deliveryDate": "2025-03-12T00:00:00",
+      "consignee": "Brain Copper",
+      "destination": "Delhi",
+      "connection": "Offline",
+      "task": "Financial Reporting"
+    },
+    {
+      "id": "LP-1234-628-721037",
+      "shipperName": "Letty Ortiz",
+      "phoneNo.": "9812345678",
+      "status": "pending",
+      "product": "milk",
+      "supplier": "dairyland",
+      "quantity": 300,
+      "price": 150,
+      "deliveryDate": "2025-03-10T00:00:00",
+      "consignee": "Mia Toretto",
+      "destination": "Mumbai",
+      "connection": "Online",
+      "task": "Vendors & Contracts"
+    },
+    {
+      "id": "LP-1234-628-721038",
+      "shipperName": "Brian O'Conner",
+      "phoneNo.": "9823456789",
+      "status": "closed",
+      "product": "bread",
+      "supplier": "wonder",
+      "quantity": 200,
+      "price": 100,
+      "deliveryDate": "2025-02-02T00:00:00",
+      "consignee": "Roman Pearce",
+      "destination": "Chennai",
+      "connection": "Offline",
+      "task": "Advertising"
+    }
+  ],
+  "shipmentsTracking": [
+    {
+      "lat": 28.6139,
+      "long": 77.2090
+    },
+    {
+      "lat": 19.0760,
+      "long": 72.8777
+    },
+    {
+      "lat": 12.9716,
+      "long": 77.5946
+    },
+    {
+      "lat": 22.5726,
+      "long": 88.3639
+    }
+  ]
+}
